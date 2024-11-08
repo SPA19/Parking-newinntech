@@ -14,6 +14,7 @@ Este proyecto implementa una API REST con Express.js para gestionar el registro 
 - Registro de vehículos (moto o carro) con placa y tiempo de entrada.
 - Listado de vehículos registrados.
 - Consulta de detalles de un vehículo por ID.
+- Consulta de detalles de un vehículo por Placa.
 - Actualización de salida de un vehículo.
 - Eliminación de un vehículo registrado.
 

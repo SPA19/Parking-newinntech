@@ -26,34 +26,35 @@ Este proyecto implementa una API REST con Express.js para gestionar el registro 
 
 ## ⭐ Requisitos Previos
 
-- [Node.js](https://nodejs.org/) v14+ y [npm](https://www.npmjs.com/)
+- [Node.js](https://nodejs.org/) v14+ 
+- [npm](https://www.npmjs.com/) para el sistema de gestion de paquetes.
 - [MongoDB](https://www.mongodb.com/) para la base de datos.
 
 ## ⚙️ Configuración del Proyecto
 
 1. **Clonar el Repositorio de GitHub:**
-   ```bash
-    git clone https://github.com/SPA19/Parking-newinntech.git
-   ```
+```bash
+  git clone https://github.com/SPA19/Parking-newinntech.git
+```
 
 2. **Navega al directorio del proyecto:**
-   ```
-    cd Parking-newinntech
-   ```
+```
+  cd Parking-newinntech
+```
 
 3. **Instalar Dependencias:**
-  ```
-    npm install
-  ```
+```
+  npm install
+```
 
 4. **Configurar Variables de Entorno:**
 
 Crea un archivo `.env` en la raíz del proyecto y añade la configuración para la base de datos y el puerto del servidor.
 
 5. **Ejecución:**
-  ```
-    npm run dev
-  ```
+```
+  npm run dev
+```
 
 # 📊 Estructura de la Base de Datos
 

@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "70987039-a695-41a1-b371-488247dfaa6f",
+		"name": "Parking Management Newinntech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26015642"
+	},
+	"item": [
+		{
+			"name": "Vehicles",
+			"item": [
+				{
+					"name": "Obtener todos los vehículos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/allVehicles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"allVehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un nuevo vehículo",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"plate\": \"ABC123\",\r\n    \"type\": \"car\",\r\n    \"entryTime\": \"2024-03-07T10:00:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/createVehicles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"createVehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener vehículo por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/vehicles/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "your-vehicle-id-here"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener registro de vehículo por placa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/plateVehicles/:plate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"plateVehicles",
+								":plate"
+							],
+							"variable": [
+								{
+									"key": "plate",
+									"value": "your-vehicle-plate-here"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar hora de salida",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/updVehicles/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"updVehicles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "your-vehicle-id-here"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar vehículo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/vehicles/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "your-vehicle-id-here"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Este folder contiene las peticiones necesarias para la gestión del sistema de parqueadero, con operaciones CRUD y validaciones específicas:\n\n- **Create**: Incluye la solicitud para registrar la entrada de nuevos vehículos. Al agregar un vehículo, el sistema verifica si hay cupos disponibles antes de proceder:\n    \n    - **Carros**: El máximo es de 5 cupos.\n        \n    - **Motos**: El máximo es de 10 cupos.\n        \n    - Si se supera el límite permitido para el tipo de vehículo, el registro no se crea.\n        \n- **Read**: Contiene consultas para:\n    \n    - Obtener todos los vehiculos sea carro o moto\n        \n    - Obtener el historial de un vehículo por su placa.\n        \n    - Consultar los detalles específicos de un vehículo usando su `id`.\n        \n- **Update**: Contiene una solicitud para registrar la hora de salida (`exitTime`) de un vehículo en el parqueadero.\n    \n- **Delete**: Permite eliminar un registro de vehículo cuando sea necesario.\n    \n\nEste folder organiza todas las operaciones para el control de vehículos en el parqueadero, asegurando que se respeten los cupos máximos para cada tipo de vehículo y permitiendo consultas detalladas para gestionar el historial de cada uno."
+		}
+	]
+}

@@ -2,7 +2,6 @@ import { Router } from "express";
 import vehicleController from "../controllers/vehicles.controller.js";
 import validateVehicle from "../middlewares/index.js";
 
-
 const router = Router();
 
 /**

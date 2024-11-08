@@ -26,7 +26,7 @@ Este proyecto implementa una API REST con Express.js para gestionar el registro 
 
 ## ⭐ Requisitos Previos
 
-- [Node.js](https://nodejs.org/) v14+ 
+- [Node.js](https://nodejs.org/) v20.17.0
 - [npm](https://www.npmjs.com/) para el sistema de gestion de paquetes.
 - [MongoDB](https://www.mongodb.com/) para la base de datos.
 
@@ -49,7 +49,7 @@ Este proyecto implementa una API REST con Express.js para gestionar el registro 
 
 4. **Configurar Variables de Entorno:**
 
-Crea un archivo `.env` en la raíz del proyecto y añade la configuración para la base de datos y el puerto del servidor.
+- Crea un archivo `.env` en la raíz del proyecto y añade la configuración para la base de datos y el puerto del servidor.
 
 5. **Ejecución:**
 ```

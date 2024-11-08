@@ -12,7 +12,7 @@ const createBackup = () => {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
     const backupPath = path.resolve(__dirname, "../backups");
-    console.log(backupPath, "estoy aqui*********************")
+
     // Fecha para el archivo
     const dateStr = new Date().toISOString().slice(0, 10);
 

@@ -33,26 +33,27 @@ Este proyecto implementa una API REST con Express.js para gestionar el registro 
 
 1. **Clonar el Repositorio de GitHub:**
    ```bash
-    - git clone https://github.com/SPA19/Parking-newinntech.git
+    git clone https://github.com/SPA19/Parking-newinntech.git
    ```
 
 2. **Navega al directorio del proyecto:**
    ```
-   cd Parking-newinntech
+    cd Parking-newinntech
    ```
 
 3. **Instalar Dependencias:**
-```
-  npm install
-```
+  ```
+    npm install
+  ```
 
 4. **Configurar Variables de Entorno:**
-   Crea un archivo `.env` en la raíz del proyecto y añade la configuración para la base de datos y el puerto del servidor.
+
+Crea un archivo `.env` en la raíz del proyecto y añade la configuración para la base de datos y el puerto del servidor.
 
 5. **Ejecución:**
-```
-  npm run dev
-```
+  ```
+    npm run dev
+  ```
 
 # 📊 Estructura de la Base de Datos
 
@@ -72,7 +73,7 @@ La base de datos MongoDB incluye una colección vehiculos para almacenar la info
 - Manejo de errores en las solicitudes HTTP.
 - Validaciones de ocupación para cupos de motos y carros.
 - Estructura modular para mantener la escalabilidad y limpieza del código.
-- Documentación en Swagger disponible en http://localhost:PORT/api-docs.
+- Documentación en Swagger disponible en http://localhost:3000/api-docs.
 
 ## 👨‍💻 Autor
 

@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "672d575b2e1aba28ab46c89f"
+  },
+  "plate": "JKL012",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-10-01T10:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d57882e1aba28ab46c8a3"
+  },
+  "plate": "XYZ789",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-10-01T09:15:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d59ea2e1aba28ab46c8a8"
+  },
+  "plate": "STU78X",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-10-01T12:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d5a2a2e1aba28ab46c8b0"
+  },
+  "plate": "GHI789",
+  "type": "car",
+  "entryTime": {
+    "$date": "2024-10-01T06:30:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d5aa92e1aba28ab46c8b4"
+  },
+  "plate": "JKL321",
+  "type": "car",
+  "entryTime": {
+    "$date": "2024-10-01T13:30:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d60698b71a215d81aa3cd"
+  },
+  "plate": "ABC123",
+  "type": "car",
+  "entryTime": {
+    "$date": "2024-10-01T08:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8d96a7faa62d2fd79550"
+  },
+  "plate": "JFC951",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:03:34.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8daea7faa62d2fd79555"
+  },
+  "plate": "HNA904",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:03:58.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8dee0a54a3cb150badc2"
+  },
+  "plate": "VID456",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:05:02.113Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8dfa0a54a3cb150badcd"
+  },
+  "plate": "IRZ837",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:05:13.955Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8e380a54a3cb150badd2"
+  },
+  "plate": "FHL571",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:06:16.258Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8e3d0a54a3cb150badd7"
+  },
+  "plate": "TQD372",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:06:20.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8e410a54a3cb150baddc"
+  },
+  "plate": "LFU648",
+  "type": "motorcycle",
+  "entryTime": {
+    "$date": "2024-11-08T04:06:25.007Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d8f810a54a3cb150badf1"
+  },
+  "plate": "IMD243",
+  "type": "car",
+  "entryTime": {
+    "$date": "2024-11-08T04:11:45.103Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d923207eed2b813e2a613"
+  },
+  "plate": "LQL177",
+  "type": "car",
+  "entryTime": {
+    "$date": "2024-11-08T04:23:13.791Z"
+  },
+  "__v": 0,
+  "exitTime": {
+    "$date": "2024-11-08T04:43:07.509Z"
+  }
+}]

@@ -1,10 +1,17 @@
+import swaggerJSDoc from "swagger-jsdoc";
+
 const swaggerOptions = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Parking Management API",
+      title: "Parking NewInntech API",
       version: "1.0.0",
-      description: "API para gestión de parqueadero de carros y motos",
+      description:
+        "API prueba tecnica para gestión de parqueadero de carros y motos de New Inntech S.A.S",
+    },
+    contact:{
+      name: "Simon Posada Acosta",
+      email: "simon.150@hotmail.com",
     },
     servers: [
       {
@@ -13,7 +20,11 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ["../routes/vehicles.routes.js"],
+  apis: [
+    "./src/routes/*.js",
+  ],
 };
 
-export default swaggerOptions;
+const swaggerSpec = swaggerJSDoc(swaggerOptions);
+
+export default swaggerSpec;

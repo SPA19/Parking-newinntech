@@ -2,14 +2,14 @@
 
 Este proyecto implementa una API REST con Express.js para gestionar el registro de placas y tiempos en un parqueadero que solo acepta vehículos de tipo **moto** y **carro**. Los carros tienen un límite de **5 cupos** y las motos de **10 cupos**.
 
-# 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 - Node.js
 - Express.js
 - MongoDB
 - Swagger (para documentación de la API)
 
-# ✨ Funcionalidades
+## ✨ Funcionalidades
 
 - Registro de vehículos (moto o carro) con placa y tiempo de entrada.
 - Listado de vehículos registrados.
@@ -57,7 +57,7 @@ Este proyecto implementa una API REST con Express.js para gestionar el registro 
   npm run dev
 ```
 
-# 📊 Estructura de la Base de Datos
+## 📊 Estructura de la Base de Datos
 
 La base de datos MongoDB incluye una colección vehiculos para almacenar la información de los vehículos registrados en el parqueadero. El modelo es el siguiente:
 

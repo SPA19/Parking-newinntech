@@ -38,7 +38,7 @@ const vehicleController = {
 
   createNewVehicle: async (req, res) => {
     try {
-      const { plate, type, entryTime } = req.body;
+      const { plate, type, user_name, user_id, entryTime } = req.body;
       //validar si la placa ya esta registrada y el vehiculo sigue en el parqueadero
       const existingPlate = await Vehicle.findOne({
         plate,
@@ -62,19 +62,39 @@ const vehicleController = {
       });
 
       //antes de registrar el carro verifica la disponibilidad que es 5
-      if (type === "car" && existingCars >= 5) {
+      if (type === "car" && existingCars >= 3) {
         return res
           .status(400)
           .json({ message: "No hay cupo de estacionamiento para tu carro" });
       }
+
+      if (
+        type === "motorcycle" &&
+        existingCars >= 1 &&
+        existingMotorcycles >= 1
+      ) {
+        return res
+          .status(400)
+          .json({
+            message:
+              "No puede ingresar dos motos al mismo tiempo, teniendo un carro",
+          });
+      }
+
       //antes de registrar la moto verifica la disponibilidad que es de 10
-      if (type === "motorcycle" && existingMotorcycles >= 10) {
+      if (type === "motorcycle" && existingMotorcycles >= 2) {
         return res
           .status(400)
           .json({ message: "No hay cupo de estacionamiento para tu moto" });
       }
 
-      const vehicle = new Vehicle({ plate, type, entryTime });
+      const vehicle = new Vehicle({
+        plate,
+        type,
+        user_name,
+        user_id,
+        entryTime,
+      });
       await vehicle.save();
       res
         .status(201)

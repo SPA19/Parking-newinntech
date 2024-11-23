@@ -10,10 +10,11 @@ const validateVehicle = (req, res, next) => {
   }
 
   //validación de formato de placa
-  if (plate.length !== 6) {
+  if (plate.length < 4 || plate.length > 7) {
+    console.log(plate.length >= 4 && plate.length <= 7);
     return res.status(400).json({
       error: "Placa inválida",
-      message: "La placa debe tener 6 caracteres",
+      message: "La placa debe tener entre 4 y 7 caracteres",
     });
   }
 
